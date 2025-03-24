@@ -168,9 +168,9 @@ const App = () => {
       <section className="text-center" style={{background:'black'}}>
 
       <div className="m-1">
-          <h3 style={{color:'#FFD700', paddingTop: '100px', fontFamily:'MyFont1', paddingBottom: "50px"}}>Trust</h3>
+          <h3 style={{color:'#FFD700', paddingTop: '100px', fontFamily:'MyFont1', paddingBottom: "50px", fontSize:"40px"}}>Trust</h3>
           <h2 className="mb-4" style={{fontFamily: 'MyFont1', paddingBottom: "20px", fontSize: "70px"}}>Services</h2>
-          <h4 style={{paddingBottom: '100px'}}>Maxmium Efforts FX Studios is a vfx outsourcing service provider for visual effect services</h4>
+          <h4 style={{paddingBottom: '100px', fontFamily: 'MyFont1'}}>Maxmium Efforts FX Studios is a vfx outsourcing service provider for visual effect services</h4>
           </div>
       </section>
       <section
