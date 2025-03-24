@@ -1,0 +1,131 @@
+:root{
+  font-family: Montserrat Alternates, Sans-serif;
+}
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('./assets/fonts/Dechorian.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'MyFont2';
+  src: url('./assets/fonts/Ezydraw.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MyFont3';
+  src: url('./assets/fonts/ROMANS.ttf') format('truetype');
+}
+
+@media (max-width: 991px) {
+  .nav-slide {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background: #212529;
+    transition: right 0.3s ease-in-out;
+    padding-top: 60px;
+  }
+  .nav-slide.open {
+    right: 0;
+  }
+  .navbar-nav{
+    background: #212529;
+    height: 100vh;
+  }
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+.nav-slide {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-slide.open {
+  transform: translateX(0);
+}
+
+}
+
+.navbar-dark {
+  background: rgb(255 255 255 / 0%); /* Light glassy background */
+  
+  backdrop-filter: blur(2px); /* Blurred effect */
+  -webkit-backdrop-filter: blur(2px); /* For Safari */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Optional border */
+  transition: background 0.3s ease-in-out;
+}
+
+.service-padding{
+  padding-top: 6rem !important;
+  padding-bottom: 3rem !important;
+}
+.text-carousel {
+  margin-top: 20px;
+}
+
+.carousel-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Smooth Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.carousel-indicators{
+  margin-bottom: -4% !important;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 12px!important;  /* Change width */
+  height: 12px!important; /* Change height */
+  border-radius: 50%!important; /* Makes it a square */
+  background-color: white!important; /* Change color */
+}
+
+/* Custom active indicator */
+.carousel-indicators .active {
+  background-color: red; /* Change active indicator color */
+}
+
+
+
+.image-container{
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container:hover{
+  transform: scale(1.03);
+}
+
+.image-container1{
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container1:hover{
+  transform: translateY(-10px);
+}
+
