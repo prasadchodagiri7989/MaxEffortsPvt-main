@@ -135,8 +135,8 @@ const App = () => {
           Your browser does not support the video tag.
         </video>
         <div className="row">
-        <h1 className="display-4 fw-bold text-center text-overlay" style={{fontFamily: 'MyFont3', marginBottom: '200px'}}>
-        maxmium efforts fx studios
+        <h1 className="display-4 fw-bold text-center text-overlay" style={{fontFamily: 'MyFont4', marginBottom: '200px'}}>
+        Maxmium Efforts FX Studios
         </h1>
         <div>
         <Carousel

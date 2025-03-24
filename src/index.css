@@ -17,6 +17,11 @@
   src: url('./assets/fonts/ROMANS.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'MyFont4';
+  src: url('./assets/fonts/WalkingBroadwayDEMO.otf') format('opentype');
+}
+
 @media (max-width: 991px) {
   .nav-slide {
     position: fixed;
