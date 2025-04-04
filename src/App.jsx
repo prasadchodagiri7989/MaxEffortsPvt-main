@@ -343,6 +343,17 @@ const App = () => {
               Careers@Maximumeffortsvfxstudios.com
             </a>
           </p>
+
+          <h2 className="text-danger fw-bold mt-4">Got a New Project !! Let's discuss here</h2>
+          <p>
+            Email:{" "}
+            <a
+              href="mailto:Careers@Maximumeffortsvfxstudios.com"
+              className="text-white"
+            >
+              mahendra@maximumeffortsfxstudios.com
+            </a>
+          </p>
         </Container>
       </section>
       {/* Footer */}
