@@ -136,7 +136,7 @@ const App = () => {
         </video>
         <div className="row">
         <h1 className="display-4 fw text-center text-overlay" style={{fontFamily: 'MyFont4', marginBottom: '200px'}}>
-        Maxmium Efforts FX Studios
+        Maximum Efforts FX Studios
         </h1>
         <div>
         <Carousel
