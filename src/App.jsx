@@ -41,7 +41,7 @@ const App = () => {
     <div className="bg-dark text-white">
       {/* Navbar */}
       <Navbar expand="lg" className="navbar-dark px-3 fixed-top">
-        <Navbar.Brand href="#" className="text-white fw-bold" style={{textAlign: 'center'}}>
+        <Navbar.Brand href="#" className="text-white fw-bold" style={{ textAlign: 'center' }}>
           Maximum Efforts <br />
           Fx Studios
         </Navbar.Brand>
@@ -62,6 +62,13 @@ const App = () => {
               className="text-white"
             >
               About
+            </Nav.Link>
+
+            <Nav.Link
+              onClick={() => scrollToSection("showreel")}
+              className="text-white"
+            >
+              Showreel
             </Nav.Link>
 
             <Nav.Link
@@ -107,6 +114,12 @@ const App = () => {
               About
             </Nav.Link>
             <Nav.Link
+              onClick={() => scrollToSection("showreel")}
+              className="text-white"
+            >
+              Showreel
+            </Nav.Link>
+            <Nav.Link
               onClick={() => scrollToSection("services")}
               className="text-white"
             >
@@ -135,57 +148,44 @@ const App = () => {
           Your browser does not support the video tag.
         </video>
         <div className="row">
-        <h1 className="display-4 fw text-center text-overlay" style={{fontFamily: 'MyFont4', marginBottom: '200px'}}>
-        Maximum Efforts FX Studios
-        </h1>
-        <div>
-        <Carousel
-          indicators={true}
-          controls={false}
-          interval={3000}
-          className="text-carousel"
-        >
-          <Carousel.Item>
-            <h3 className="text-white text-center carousel-text" style={{fontFamily: 'MyFont1'}}>
-             We love VFX
-            </h3>
-          </Carousel.Item>
-          <Carousel.Item>
-            <h3 className="text-white text-center carousel-text" style={{fontFamily: 'MyFont1'}}>
-              We love cinema
-            </h3>
-          </Carousel.Item>
-          <Carousel.Item>
-            <h3 className="text-white text-center carousel-text" style={{fontFamily: 'MyFont1'}}>
-              We love pizza
-            </h3>
-          </Carousel.Item>
-        </Carousel>
-        </div>
-        </div>
-        
-      </section>
-        {/* Google Drive Video Section */}
-          <section className="text-center" style={{background: 'black', padding: '60px 0'}}>
-            <div style={{display: 'flex', justifyContent: 'center', alignItems: 'flex-start', width: '100%', gap: '0'}}>
-              <div style={{display: 'flex', flexDirection: 'column', alignItems: 'flex-start'}}>
-                <h2 className="mb-4 text-white" style={{minWidth: '200px', textAlign: 'left', marginTop: 0}}>Showreel</h2>
-              </div>
-              <div style={{display: 'flex', justifyContent: 'flex-end'}}>
-                <video width="640" height="360" controls style={{border: 'none'}}>
-                  <source src="/src/assets/showreel.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-            </div>
-          </section>
-      <section className="text-center" style={{background:'black'}}>
-
-      <div className="m-1">
-          <h3 style={{color:'#FFD700', paddingTop: '100px', fontFamily:'MyFont1', paddingBottom: "50px", fontSize:"40px"}}>Trust</h3>
-          <h2 className="mb-4" style={{fontFamily: 'MyFont1', paddingBottom: "20px", fontSize: "70px"}}>Services</h2>
-          <h4 style={{paddingBottom: '100px', fontFamily: 'MyFont1'}}>Maxmium Efforts FX Studios is a vfx outsourcing service provider for visual effect services</h4>
+          <h1 className="display-4 fw text-center text-overlay" style={{ fontFamily: 'MyFont4', marginBottom: '200px' }}>
+            Maximum Efforts FX Studios
+          </h1>
+          <div>
+            <Carousel
+              indicators={true}
+              controls={false}
+              interval={3000}
+              className="text-carousel"
+            >
+              <Carousel.Item>
+                <h3 className="text-white text-center carousel-text" style={{ fontFamily: 'MyFont1' }}>
+                  We love VFX
+                </h3>
+              </Carousel.Item>
+              <Carousel.Item>
+                <h3 className="text-white text-center carousel-text" style={{ fontFamily: 'MyFont1' }}>
+                  We love cinema
+                </h3>
+              </Carousel.Item>
+              <Carousel.Item>
+                <h3 className="text-white text-center carousel-text" style={{ fontFamily: 'MyFont1' }}>
+                  We love pizza
+                </h3>
+              </Carousel.Item>
+            </Carousel>
           </div>
+        </div>
+
+      </section>
+
+      <section className="text-center" style={{ background: 'black' }}>
+
+        <div className="m-1">
+          <h3 style={{ color: '#FFD700', paddingTop: '100px', fontFamily: 'MyFont1', paddingBottom: "50px", fontSize: "40px" }}>Trust</h3>
+          <h2 className="mb-4" style={{ fontFamily: 'MyFont1', paddingBottom: "20px", fontSize: "70px" }}>Services</h2>
+          <h4 style={{ paddingBottom: '100px', fontFamily: 'MyFont1' }}>Maxmium Efforts FX Studios is a vfx outsourcing service provider for visual effect services</h4>
+        </div>
       </section>
       <section
         id="about"
@@ -249,7 +249,7 @@ const App = () => {
             <Col md={4} className="mb-4">
               <Card className="bg-dark text-white image-container">
                 <div>
-                <Card.Img src={roto} alt="Rotoscopy" />
+                  <Card.Img src={roto} alt="Rotoscopy" />
                 </div>
                 <Card.Body>
                   <Card.Title>ROTOSCOPY</Card.Title>
@@ -298,6 +298,22 @@ const App = () => {
             </Col>
           </Row>
         </Container>
+      </section>
+
+
+      {/* Google Drive Video Section */}
+      <section id="showreel" className="text-center" style={{ background: 'black', padding: '60px 0' }}>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', width: '100%', gap: '0' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+            <h2 className="mb-4 text-white" style={{ minWidth: '200px', textAlign: 'left', marginTop: 0 }}>Showreel</h2>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+            <video width="640" height="360" controls style={{ border: 'none' }}>
+              <source src="/src/assets/showreel.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
       </section>
 
       <section
@@ -376,8 +392,8 @@ const App = () => {
           &copy; {currentYear} Maximum Efforts VFX Pvt. Ltd. All Rights Reserved.
         </p>
         <p className="mb-0">
-    Designed & Developed by <i><strong>Jagadeesh .K</strong></i>
-  </p>
+          Designed & Developed by <i><strong>Jagadeesh .K</strong></i>
+        </p>
       </footer>
     </div>
   );
