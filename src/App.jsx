@@ -302,9 +302,7 @@ const App = () => {
 
 
       {/* Google Drive Video Section */}
-          <section id="showreel" className="text-center" style={{
-            background: `url('/src/assets/miles-morales-8648x5000-12133.jpg') center center/cover no-repeat`,
-            minHeight: '600px',
+          <section id="showreel" className="text-center showreel-section-bg" style={{
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center'
@@ -321,7 +319,7 @@ const App = () => {
                   controls
                   className="showreel-video"
                 >
-                  <source src="/src/assets/showreel.mp4" type="video/mp4" />
+                  <source src="/showreel.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
             </div>

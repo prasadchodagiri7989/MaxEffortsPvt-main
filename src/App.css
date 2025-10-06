@@ -1,3 +1,8 @@
+/* Showreel Section Background */
+.showreel-section-bg {
+  background: url('/miles-morales-8648x5000-12133.jpg') center center/cover no-repeat;
+  min-height: 600px;
+}
 /* Responsive Showreel Section */
 .showreel-flex {
   display: flex;
