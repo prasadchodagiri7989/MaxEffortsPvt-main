@@ -302,19 +302,31 @@ const App = () => {
 
 
       {/* Google Drive Video Section */}
-      <section id="showreel" className="text-center" style={{ background: 'black', padding: '60px 0' }}>
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', width: '100%', gap: '0' }}>
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
-            <h2 className="mb-4 text-white" style={{ minWidth: '200px', textAlign: 'left', marginTop: 0 }}>Showreel</h2>
-          </div>
-          <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
-            <video width="640" height="360" controls style={{ border: 'none' }}>
-              <source src="/src/assets/showreel.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </div>
-      </section>
+          <section id="showreel" className="text-center" style={{
+            background: `url('/src/assets/miles-morales-8648x5000-12133.jpg') center center/cover no-repeat`,
+            minHeight: '600px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center'
+          }}>
+            <div className="showreel-flex">
+                <h2
+                  className="mb-4 text-white showreel-title"
+                >
+                  Showreel
+                </h2>
+                <video
+                  width="100%"
+                  height="auto"
+                  controls
+                  className="showreel-video"
+                >
+                  <source src="/src/assets/showreel.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+            </div>
+          </section>
+        {/* ...existing code... */}
 
       <section
         id="work"

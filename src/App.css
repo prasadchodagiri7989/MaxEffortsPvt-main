@@ -1,3 +1,59 @@
+/* Responsive Showreel Section */
+.showreel-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+
+.showreel-title {
+  min-width: 180px;
+  text-align: left;
+  margin-top: 0;
+  text-shadow: 0 0 16px #000, 0 0 8px #222;
+  font-size: 2rem;
+  word-break: break-word;
+  flex: 0 1 300px;
+  margin-bottom: 0;
+  align-self: center;
+}
+
+
+.showreel-video {
+  border: none;
+  margin-top: 0;
+  box-shadow: 0 0 32px 8px rgba(0,0,0,0.7);
+  max-width: 600px;
+  width: 100%;
+  border-radius: 12px;
+  background: rgba(0,0,0,0.2);
+  flex: 1 1 480px;
+  align-self: flex-end;
+}
+
+@media (max-width: 768px) {
+  .showreel-flex {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .showreel-title {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    align-self: center;
+  }
+  .showreel-video {
+    max-width: 100%;
+    margin-top: 10px;
+    align-self: center;
+  }
+}
 /* .section-background { 
   background: url('./assets/lady.webp') no-repeat center center/cover;
   height: 70vh;
